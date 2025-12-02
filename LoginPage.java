@@ -1,15 +1,15 @@
-package week1.day2;
+package week4.day1;
 
-import org.openqa.selenium.chrome.ChromeDriver;
+public class LoginPage extends BasePage{
 
-public class LoginPage {
+	public void performCommonTasks() {
+		super.performCommonTasks();
+		System.out.println("Task completed");
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		ChromeDriver driver = new ChromeDriver();
-		driver.get("http://leaftaps.com/opentaps/control/main");
-		
 	}
+	public static void main(String[] args) {
+		LoginPage task = new LoginPage();
+		task.performCommonTasks();
 
+	}
 }
